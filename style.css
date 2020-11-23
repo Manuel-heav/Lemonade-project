@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  cursor: pointer;
+  border: orange 1px solid;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 50px;
+  width: 175px;
+  color:  #F0F8FF;
+  font-size: 1.4em;
+  margin-left: auto;
+  transition: 0.5s;
+}
+.btn:hover{
+  background-color: orange;
+  color: black
+}
+a{
+  text-decoration: none;
+}
+body{
+  font-family: Poppins;
+  font-size: 12px;
+  background: black;
+  color: #D2691E;
+}
+
+.container{
+  width: 90%;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 15px;
+  display: inherit;
+  margin-left: 32px;
+  text-transform: uppercase;
+}
+
+.Welcome {
+  font-size: 60px;
+  margin-left: 138px;
+  margin-top: 50px;
+  color: #F0F8FF;
+  animation: slide_down 1.4s ease;
+}
+
+.Lemonade {
+  font-size: 40px;
+  margin-left: 138px;
+  color: orange;
+  margin-top: 20px;
+  animation: slide_down 2s ease;
+}
+.lemonade3{
+  color: #F0F8FF;
+
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  animation: image_rotate 10s ease;
+  /*transform: rotate(35deg);*/
+  margin-top: -250px;
+  margin-left: 600px;
+  opacity: 0.3;
+}
+
+.border {
+  display: block;
+  width: 800px;
+  height: 1px;
+  background:	#696969;
+  margin: 50px auto;
+}
+
+/* Section1 */
+.about-us-section{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+.about-us-section h1{
+  font-size: 50px;
+}
+
+.Section1-paragraphs{
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px; */
+}
+.Section1-paragraphs p{
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  animation: slide_down 3s ease;
+}
+
+/*Footer*/
+footer p{
+  margin-top:30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+@keyframes slide_down {
+  0%{
+    transform: translateX(-250px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes  image_rotate{
+  0%{
+    transform: rotateY(120deg);
+  }
+  100%{
+    transform: rotateY(0);
+  }
+}
